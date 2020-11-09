@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Fee collection software</title>
+<link rel="stylesheet" href="custom.css">
+    <link href="https://fonts.googleapis.com/css?">
+</head>
+<body>
+    <div class="main">
+            <div class="navbar">
+              <img src="C:\Users\iqbal\Desktop\fees payment">
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">login</a></li>
+            <li><a href="form.html">Sign up</a> </li>
+        </ul>
+    <div class="navbar-icons">
+        <img src="img/call.png">
+        <img src="img/mail.png">
+    </div>
+         </div>
+        <div class="banner">
+        <div class="left-column">
+            <h1>Fee collection software</h1><br>
+           <h1>-Fees Payment system</h1>
+           <p>Collect fee payment online <big>Via website</big> or <big>App</big>
+           </p>
+    <div class="btn">
+           <button type="button" class="primary-btn">Sign up</button>
+           <button type="button">Learn More</button>
+        </div>
+    </div>
+
+        <div class="right-column">
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcREmZ2E7QLkTZXSOPuimhzd798s6iv39DBRBg&usqp=CAU">
+        </div>
+    </div>
+    </div>
+
+</body>
+</html>

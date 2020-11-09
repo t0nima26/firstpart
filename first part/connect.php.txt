@@ -1,0 +1,25 @@
+<?php
+    $FirstName = $_Post['FirstName'];
+    $LastName = $_Post['LastName'];
+    $RollNo = $_Post['RollNo'];
+    $Password = $_Post['Password'];
+    $ConfirmPassword = $_Post['ConfirmPassword'];
+    $Gender = $_Post['Gender'];
+    $EmailId = $_Post['EmailId'];
+    $PhoneNumber = $_Post['PhoneNumber'];
+
+    //Database connection
+    $conn = new mysqli ('localhost','root','','table1');
+    if($conn->connect_error){
+        die('Connection Failed : '.$conn->connect_error);
+    }else{
+        $stmt = $conn->prepare("insert into Sign Up(FirstName,LastName,RollNo,Password,ConfirmPassword,Gender,EmailId,PhoneNumber)
+            values,?,?,?(?,?,?,?,?)");
+        $stmt->bind_param("sssssssi",$FirstName, $LastName, $RollNo, $Password, $ConfirmPassword, $Gender, $EmailId, $PhoneNumber);
+        $stmt->execute();
+        echo "registration Successfully......";
+        $stmt->close();
+        $conn->close();
+}
+
+?>
